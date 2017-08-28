@@ -1,0 +1,7 @@
+output{
+  #elasticsearch {
+  #    index => "pon-poc-test-%{+YYYY.MM}"
+  #    hosts => [ "elasticsearch" ]
+  #  }
+  stdout{}
+}
