@@ -1,6 +1,7 @@
-output{
-  elasticsearch{
-    hosts => ["http://elasticsearch-pon-monitoring-ota.cloudapps.pifold.ontrail.com:80"]
-    index => "pon-poc-logstash-%{+YYYY.MM.dd}"
+output {
+  elasticsearch {
+    index => "pon-poc-logstash-%{+YYYY.MM.dd}"  
+    hosts => ["http://elasticsearch-pon-monitoring-ota.cloudapps.pifold.ontrail.com"]
   }
+  stdout{}
 }
